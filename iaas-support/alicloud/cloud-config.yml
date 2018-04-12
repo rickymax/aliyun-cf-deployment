@@ -36,7 +36,7 @@ vm_types:
     system_disk: {size: "40_960"}
 - name: mideum
   cloud_properties:
-    instance_type: ecs.sn2ne.xlarge
+    instance_type: ecs.cm4.xlarge
     ephemeral_disk: {size: "20_480"}
     system_disk: {size: "40_960"}
 - name: mideum-highmem
