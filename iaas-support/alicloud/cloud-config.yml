@@ -112,8 +112,10 @@ vm_extensions:
   cloud_properties:
     slbs: ((tcp_slb_id_array))
 - name: diego-ssh-proxy-network-properties
+  cloud_properties:
     slbs: ((diego_slb_id_array))
 - name: rabbitmq-network-properties
+  cloud_properties:
     slbs: ((rabbitmq_slb_id_array))
 
 networks:
