@@ -30,17 +30,17 @@ vm_types:
     instance_type: ecs.sn2ne.large
     ephemeral_disk: {size: "20_480"}
     system_disk: {size: "20_480"}
-- name: mideum-lowmem
+- name: medium-lowmem
   cloud_properties:
     instance_type: ecs.sn1ne.xlarge
     ephemeral_disk: {size: "20_480"}
     system_disk: {size: "40_960"}
-- name: mideum
+- name: medium
   cloud_properties:
     instance_type: ecs.cm4.xlarge
     ephemeral_disk: {size: "20_480"}
     system_disk: {size: "40_960"}
-- name: mideum-highmem
+- name: medium-highmem
   cloud_properties:
     instance_type: ecs.ce4.xlarge
     ephemeral_disk: {size: "20_480"}
