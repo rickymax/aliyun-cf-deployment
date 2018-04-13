@@ -21,6 +21,7 @@ vm_types:
     ephemeral_disk: {size: "20_480"}
     system_disk: {size: "20_480"}
 - name: small-lowmem
+  cloud_properties:
     instance_type: ecs.sn1ne.large
     ephemeral_disk: {size: "20_480"}
     system_disk: {size: "20_480"}
