@@ -12,7 +12,6 @@ addons:
   include:
     stemcell:
     - os: ubuntu-trusty
-    - name: bosh-alicloud-kvm-ubuntu-trusty-go_agent
   exclude:
     jobs:
     - name: smoke_tests

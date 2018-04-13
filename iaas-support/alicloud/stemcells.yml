@@ -1,7 +1,7 @@
 ---
 # Light Stemcells
-- type: remove
-  path: /stemcells/alias=default/os?
+#- type: remove
+#  path: /stemcells/alias=default/os?
 
 - type: replace
   path: /stemcells/alias=default/name?
