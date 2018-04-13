@@ -1083,7 +1083,7 @@ instance_groups:
   - z1
   - z2
   instances: 3
-  vm_type: medium
+  vm_type: medium-highmem
   vm_extensions:
   - 100GB_ephemeral_disk
   stemcell: default
