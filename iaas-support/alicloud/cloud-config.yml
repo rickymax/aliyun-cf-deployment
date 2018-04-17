@@ -30,6 +30,11 @@ vm_types:
     instance_type: ecs.sn2ne.large
     ephemeral_disk: {size: "20_480"}
     system_disk: {size: "20_480"}
+- name: small-highmem
+  cloud_properties:
+    instance_type: ecs.se1.large
+    ephemeral_disk: {size: "20_480"}
+    system_disk: {size: "20_480"}
 - name: medium-lowmem
   cloud_properties:
     instance_type: ecs.sn1ne.xlarge
@@ -207,7 +212,7 @@ networks:
   type: vip
 
 compilation:
-  workers: 1
+  workers: 3
   reuse_compilation_vms: true
   az: z1
   vm_type: compiler
