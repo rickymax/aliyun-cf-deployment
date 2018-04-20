@@ -598,6 +598,11 @@ instance_groups:
             authorized-grant-types: client_credentials,refresh_token
             scope: uaa.none
             secret: "((uaa_clients_prometheus_cf_secret))"
+          oss-api:
+            authorities: password.write,uaa.admin,scim.write,scim.read,scim.userids
+            authorized-grant-types: refresh_token,client_credentials,password
+            scope: clients.read,password.write,clients.secret,clients.write,uaa.admin,scim.write,scim.read
+            secret: "((uaa_clients_oss_api_secret))"
       uaadb:
         databases:
         - name: uaa
@@ -1488,6 +1493,8 @@ variables:
 - name: uaa_clients_prometheus_firehose_secret
   type: password
 - name: uaa_clients_prometheus_cf_secret
+  type: password
+- name: uaa_clients_oss_api_secret
   type: password
 - name: uaa_user_advadmin_secret
   type: password
